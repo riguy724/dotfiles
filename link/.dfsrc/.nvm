@@ -1,0 +1,4 @@
+# Load in nvm
+export NVM_DIR="/Users/chris/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#alias node-req-global="export NODE_PATH=$NODE_PATH:`npm root -g`"

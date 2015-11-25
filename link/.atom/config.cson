@@ -1,0 +1,31 @@
+"*":
+  "exception-reporting":
+    userId: "39a1dca6-432e-ae78-da0b-e2b93d7a04cc"
+  welcome:
+    showOnStartup: false
+  core:
+    packagesWithKeymapsDisabled: [
+      "nerd-treeview"
+    ]
+  editor:
+    invisibles: {}
+  "fuzzy-finder": {}
+  tabs:
+    usePreviewTabs: true
+  preview: {}
+  "symbols-tree-view": {}
+  "linter-pylint": {}
+  "tree-view-filter":
+    liveUpdate: true
+  "atom-terminal":
+    MacWinRunDirectly: true
+  "open-terminal-here": {}
+  "linter-pep8": {}
+  linter: {}
+  minimap:
+    plugins:
+      "git-diff": true
+      codeglance: true
+      "find-and-replace": true
+    textOpacity: 0.8
+    absoluteMode: true

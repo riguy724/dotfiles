@@ -1,0 +1,26 @@
+# Docker environment setup??
+docker-machine start default
+eval "$(docker-machine env default)"
+alias docker-up="docker-compose up -d"
+alias docker-stop="docker-compose stop"
+alias docker-rs="docker-compose restart"
+alias docker-db="ansible-playbook playbook.yml --tags "import" --ask-vault-pass"
+alias docker-build="docker-compose build"
+alias dlog="docker logs -f"
+
+# docker_insp: inspect docker container for a particular setting
+# usage: docker_insp <container> <search>
+# example: docker_insp <container> . (returns all)
+# example: docker_insp <container> .Config.Env (returns environment)
+# --------------------------------------
+docker_insp() {
+    FORMAT="'{{json $2}}'";
+    COMMAND="docker inspect --format=$FORMAT $1 | json-pretty"
+    eval $COMMAND
+}
+
+# docker_clean: remove all exited docker containers and inactive images
+docker_clean() {
+    docker rm -f $(docker ps -a -q)
+    docker rmi -f $(docker images -q)
+}
