@@ -46,7 +46,8 @@ Along with corresponding keys and ssh config files this can be a quick and neat 
 Be warned that this assumes a dynamic `~/.ssh` directory and will delete any keys you may have currently existing there.
 
 Note: A private repository that utilizes the link-links script can be a quite effective way of managing this.
-Keeping private bash commands and keys separate.
+Keeping private bash commands and keys separate.  Just chmod 400 your private key symlinks so that ssh is okay with doing
+this.
 
 #### set-identity example
 
@@ -60,6 +61,6 @@ set-riguy724() {
 
 set-ssh() {
   rm -rf ~/.ssh
-  sudo ln -fs ~/.ssh-profiles/$SSH_PROFILE_NAME ~/.ssh
+  ln -fs ~/.ssh-profiles/$SSH_PROFILE_NAME ~/.ssh
 }
 ```

@@ -1,11 +1,9 @@
 # Docker environment setup??
 docker-machine start default
 eval "$(docker-machine env default)"
-alias docker-up="docker-compose up -d"
-alias docker-stop="docker-compose stop"
-alias docker-rs="docker-compose restart"
-alias docker-db="ansible-playbook playbook.yml --tags "import" --ask-vault-pass"
-alias docker-build="docker-compose build"
+alias dcup="docker-compose up -d"
+alias docker-import="ansible-playbook playbook.yml --tags "import" --ask-vault-pass"
+alias dcb="docker-compose build"
 alias dlog="docker logs -f"
 
 # docker_insp: inspect docker container for a particular setting
