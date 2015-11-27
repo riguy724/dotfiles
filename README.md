@@ -60,6 +60,6 @@ set-riguy724() {
 
 set-ssh() {
   rm -rf ~/.ssh
-  sudo ln -fd ~/.ssh-profiles/$SSH_PROFILE_NAME ~/.ssh
+  sudo ln -fs ~/.ssh-profiles/$SSH_PROFILE_NAME ~/.ssh
 }
 ```
