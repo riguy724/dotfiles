@@ -1,5 +1,7 @@
 # Import the brew installed python site-packages directory for use in os x python
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
+alias epp='export PYTHONPATH="/usr/local/lib/python2.7/site-packages"'
+alias unpp='unset PYTHONPATH'
+epp
 
 # Configure python virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs

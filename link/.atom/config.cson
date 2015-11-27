@@ -13,7 +13,8 @@
   tabs:
     usePreviewTabs: true
   preview: {}
-  "symbols-tree-view": {}
+  "symbols-tree-view":
+    autoHide: true
   "linter-pylint": {}
   "tree-view-filter":
     liveUpdate: true
