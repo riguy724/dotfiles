@@ -11,7 +11,7 @@ brew upgrade --all
 brew install coreutils
 sudo ln -fs /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 brew install brew-cask
 brew install homebrew/php/php56
