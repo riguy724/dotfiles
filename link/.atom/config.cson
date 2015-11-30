@@ -6,6 +6,7 @@
   core:
     packagesWithKeymapsDisabled: [
       "nerd-treeview"
+      "open-on-github"
     ]
   editor:
     invisibles: {}
@@ -32,3 +33,5 @@
     textOpacity: 0.8
   "git-plus": {}
   "gist-it": {}
+  "open-on-github":
+    includeLineNumbersInUrls: false
