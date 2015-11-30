@@ -1,0 +1,16 @@
+ansible
+boto
+ecdsa
+Jinja2
+MarkupSafe
+paramiko
+pbr
+pep8
+pycrypto
+PyYAML
+six
+stevedore
+vboxapi
+virtualenv
+virtualenv-clone
+virtualenvwrapper

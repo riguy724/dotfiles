@@ -27,6 +27,7 @@ brew install wget
 brew install findutils
 brew install docker
 brew install docker-machine
+brew install docker-compose
 brew install mysql
 
 brew cask install atom
@@ -49,7 +50,6 @@ brew cask install pycharm
 brew cask install phpstorm
 brew cask install virtualbox
 brew cask install kitematic
-brew cask install docker-compose
 brew cask install skype
 brew cask install gitter
 

@@ -21,7 +21,8 @@
   "atom-terminal":
     MacWinRunDirectly: true
   "open-terminal-here": {}
-  "linter-pep8": {}
+  "linter-pep8":
+    pep8ExecutablePath: "/usr/local/bin/pep8"
   linter: {}
   minimap:
     plugins:
@@ -29,3 +30,5 @@
       codeglance: true
       "find-and-replace": true
     textOpacity: 0.8
+  "git-plus": {}
+  "gist-it": {}

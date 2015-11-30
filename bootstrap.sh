@@ -27,6 +27,9 @@ mkdir -p $HOME/Projects/vew-managed
 mkdir -p $HOME/.virtualenvs
 mkdir -p $HOME/Devel
 
+easy_install pip
+pip install -r bootstrap/pip-packages.txt
+
 docker-machine create -d virtualbox --virtualbox-cpu-count "4" --virtualbox-disk-size "30000" --virtualbox-memory "6144" default
 
 eval $(docker-machine env default)

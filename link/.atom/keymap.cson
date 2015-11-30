@@ -30,4 +30,5 @@
   'ctrl-`': 'tree-view:toggle-focus',
   'alt-e': 'nerd-treeview:open-tab-stay',
   'alt-down': 'nerd-treeview:jump-next',
-  'alt-up': 'nerd-treeview:jump-prev'
+  'alt-up': 'nerd-treeview:jump-prev',
+  'ctrl-shift-G': 'open-on-github:blame'
