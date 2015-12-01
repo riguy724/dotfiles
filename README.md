@@ -40,7 +40,7 @@ There are some example commands of:
 
 ### Multi-ssh configuration
 
-a `.ssh-profiles` directory in `link/` can be combined with `set-identity` commands to switch between
+a `.sshprofiles` directory in `link/` can be combined with `set-<identity>` commands to switch between
 different ssh keys and config files.  You can see an example of how these bash commands work below.
 Along with corresponding keys and ssh config files this can be a quick and neat identity management system.
 Be warned that this assumes a dynamic `~/.ssh` directory and will delete any keys you may have currently existing there.
@@ -53,14 +53,36 @@ this.
 
 **Careful using this!!**
 
+`dotfiles-private/link/.dfsrc/.sshaliases`
 ```
 set-riguy724() {
-  export SSH_PROFILE_NAME=riguy
+  export SSH_PROFILE_NAME=riguy724
   set-ssh
 }
 
 set-ssh() {
   rm -rf ~/.ssh
-  ln -fs ~/.ssh-profiles/$SSH_PROFILE_NAME ~/.ssh
+  ln -fs ~/.sshprofiles/$SSH_PROFILE_NAME ~/.ssh
 }
 ```
+
+`dotfiles-private/link/.sshprofile`
+  - riguy724
+    - config
+      ```
+      StrictHostKeyChecking no
+      UserKnownHostsFile=/dev/null
+
+      Host riguy724-bastion
+          User riguy724
+          Hostname example.com
+          Port 22
+
+      Host server1
+          User ubuntu
+          Hostname server1.example.com
+          Port 22
+          ProxyCommand ssh -W %h:%p riguy724-bastion
+      ```
+    - id_rsa
+    - id_rsa.pub
