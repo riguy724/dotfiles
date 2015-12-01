@@ -86,3 +86,10 @@ set-ssh() {
       ```
     - id_rsa
     - id_rsa.pub
+
+After running link-links.sh from your private repository you'll have to update
+your private keys permissions to make it usable:
+
+`chmod 400 dotfiles-private/link/.sshprofile/riguy724/id_rsa`
+
+You should be all set!
