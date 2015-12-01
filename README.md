@@ -53,6 +53,7 @@ this.
 
 **Careful using this!!**
 
+
 `dotfiles-private/link/.dfsrc/.sshaliases`
 ```
 set-riguy724() {
@@ -66,7 +67,9 @@ set-ssh() {
 }
 ```
 
-`dotfiles-private/link/.sshprofile`
+
+
+`dotfiles-private/link/.sshprofiles`
   - riguy724
     - config
       ```
@@ -87,9 +90,15 @@ set-ssh() {
     - id_rsa
     - id_rsa.pub
 
+
+
 After running link-links.sh from your private repository you'll have to update
 your private keys permissions to make it usable:
 
 `chmod 400 dotfiles-private/link/.sshprofile/riguy724/id_rsa`
 
-You should be all set!
+Use the alias:
+
+`set-riguy724`
+
+You should be all set... ssh away!
