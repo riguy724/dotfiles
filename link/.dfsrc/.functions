@@ -1,0 +1,8 @@
+exit-status() {
+    echo $?
+}
+
+# Follow a symlink to its origin - helpful for using the linking library
+to-symlink() {
+    cd $(dirname -- $(readlink -- $1))
+}
