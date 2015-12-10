@@ -25,7 +25,6 @@ mkdir -p $HOME/Projects/nowait
 mkdir -p $HOME/Projects/personal
 mkdir -p $HOME/Projects/vew-managed
 mkdir -p $HOME/.virtualenvs
-mkdir -p $HOME/Devel
 
 easy_install pip
 pip install -r bootstrap/pip-packages.txt
