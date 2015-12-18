@@ -52,5 +52,7 @@ brew cask install virtualbox
 brew cask install kitematic
 brew cask install skype
 brew cask install gitter
+brew cask install osxfuse
+brew cask install sshfs
 
 brew cleanup
