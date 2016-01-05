@@ -8,6 +8,9 @@
       "nerd-treeview"
       "open-on-github"
     ]
+    disabledPackages: [
+      "flatten-json"
+    ]
   editor:
     invisibles: {}
   "fuzzy-finder": {}
