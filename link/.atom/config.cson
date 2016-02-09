@@ -1,40 +1,40 @@
 "*":
-  "exception-reporting":
-    userId: "39a1dca6-432e-ae78-da0b-e2b93d7a04cc"
-  welcome:
-    showOnStartup: false
+  "atom-terminal":
+    MacWinRunDirectly: true
   core:
+    disabledPackages: [
+      "flatten-json"
+    ]
     packagesWithKeymapsDisabled: [
       "nerd-treeview"
       "open-on-github"
     ]
-    disabledPackages: [
-      "flatten-json"
-    ]
   editor:
     invisibles: {}
+  "exception-reporting":
+    userId: "39a1dca6-432e-ae78-da0b-e2b93d7a04cc"
   "fuzzy-finder": {}
-  tabs:
-    usePreviewTabs: true
+  "gist-it": {}
+  "git-plus": {}
+  linter: {}
+  "linter-pep8":
+    pep8ExecutablePath: "/usr/local/bin/pep8"
+  "linter-pylint": {}
+  minimap:
+    plugins:
+      codeglance: true
+      "find-and-replace": true
+      "git-diff": true
+    textOpacity: 0.8
+  "open-on-github":
+    includeLineNumbersInUrls: false
+  "open-terminal-here": {}
   preview: {}
   "symbols-tree-view":
     autoHide: true
-  "linter-pylint": {}
+  tabs:
+    usePreviewTabs: true
   "tree-view-filter":
     liveUpdate: true
-  "atom-terminal":
-    MacWinRunDirectly: true
-  "open-terminal-here": {}
-  "linter-pep8":
-    pep8ExecutablePath: "/usr/local/bin/pep8"
-  linter: {}
-  minimap:
-    plugins:
-      "git-diff": true
-      codeglance: true
-      "find-and-replace": true
-    textOpacity: 0.8
-  "git-plus": {}
-  "gist-it": {}
-  "open-on-github":
-    includeLineNumbersInUrls: false
+  welcome:
+    showOnStartup: false
