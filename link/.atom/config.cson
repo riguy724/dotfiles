@@ -1,15 +1,20 @@
 "*":
+  "atom-beautify":
+    _analyticsUserId: "80d4dd6c-d300-4bd3-bd16-a1e776e9f74b"
+    language_php_beautify_on_save: true
   "atom-terminal":
     MacWinRunDirectly: true
   core:
     disabledPackages: [
       "flatten-json"
+      "whitespace"
     ]
     packagesWithKeymapsDisabled: [
       "nerd-treeview"
       "open-on-github"
     ]
   editor:
+    fontSize: 16
     invisibles: {}
   "exception-reporting":
     userId: "39a1dca6-432e-ae78-da0b-e2b93d7a04cc"
