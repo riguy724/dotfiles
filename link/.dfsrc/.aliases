@@ -11,12 +11,14 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 cd() { builtin cd "$@"; ls -AF; }               # Always list directory contents upon 'cd'
 alias ff="find . -iname "                 # qfind:    Quickly search for file
 alias gco="git checkout"
+__git_complete gco _git_checkout
 alias gs="git status"
 alias gbs="git branch --list --all"
 alias gbvs="git branch -vv"
 alias glp="git log --pretty=oneline"
 alias wtfis="type -a"
 alias json-pretty="python -m json.tool"
+alias rec-find-filter="find . -name \*.jar -print0 | xargs -0n1 basename | sort | uniq -d | xargs -I{} find . -iname {}"
 my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
 #   lr:  Full Recursive Directory Listing

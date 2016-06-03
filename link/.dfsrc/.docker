@@ -1,6 +1,6 @@
 # Docker environment setup??
 # docker-machine start default
-# eval $(docker-machine env default)
+eval $(docker-machine env default)
 alias dcup="docker-compose up -d"
 alias docker-import="ansible-playbook playbook.yml --tags "import" --ask-vault-pass"
 alias dcb="docker-compose build"

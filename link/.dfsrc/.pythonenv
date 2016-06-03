@@ -6,12 +6,12 @@ epp
 # Configure python virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-export PROJECT_HOME=$HOME/Projects/vew-managed
+export PROJECT_HOME=$HOME/Projects
 export PIP_RESPECT_VIRTUALENV=true
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 
 # This should already be set, but let's just make sure it using the correct python binary
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/Cellar/python/2.7.10_2/bin/python"
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/Cellar/python/2.7.11/bin/python"
 
 # Run the script to set up wrapper
 source /usr/local/bin/virtualenvwrapper.sh

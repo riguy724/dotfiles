@@ -8,6 +8,7 @@
     disabledPackages: [
       "flatten-json"
       "whitespace"
+      "linter-pep8"
     ]
     packagesWithKeymapsDisabled: [
       "nerd-treeview"
@@ -16,6 +17,7 @@
   editor:
     fontSize: 16
     invisibles: {}
+    showInvisibles: true
   "exception-reporting":
     userId: "39a1dca6-432e-ae78-da0b-e2b93d7a04cc"
   "fuzzy-finder": {}
@@ -23,6 +25,7 @@
   "git-plus": {}
   linter: {}
   "linter-pep8":
+    maxLineLength: 120
     pep8ExecutablePath: "/usr/local/bin/pep8"
   "linter-pylint": {}
   minimap:
@@ -43,3 +46,5 @@
     liveUpdate: true
   welcome:
     showOnStartup: false
+  "xml-formatter":
+    xmlUtf8Header: false
